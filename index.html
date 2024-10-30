@@ -7,36 +7,67 @@
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
+
   <body class="page">
     <header class="header">
       <ul class="header__socials-list">
         <li class="header__socials-list-item">
           <a href="">
-            <img src="./images/logo.svg" width="100" height="28" alt="" />
+            <img
+              src="./images/logo.svg"
+              width="100"
+              height="28"
+              alt="ссылка на аккаунт в дискорде"
+            />
           </a>
         </li>
         <li class="header__socials-list-item">
           <a href="">
-            <img src="./images/github.png" width="16" height="16" alt="" />
+            <img
+              class="socials-icon"
+              src="./images/github.png"
+              width="16"
+              height="16"
+              alt="ссылка на аккаунт на гитхабе"
+            />
           </a>
         </li>
         <li class="header__socials-list-item">
           <a href="">
-            <img src="./images/twitter.svg" width="16" height="16" alt="" />
+            <img
+              class="socials-icon"
+              src="./images/twitter.svg"
+              width="16"
+              height="16"
+              alt="ссылка на аккаунт в твиттере"
+            />
           </a>
         </li>
         <li class="header__socials-list-item">
           <a href="">
-            <img src="./images/instagram.svg" width="16" height="16" alt="" />
+            <img
+              class="socials-icon"
+              src="./images/instagram.svg"
+              width="16"
+              height="16"
+              alt="ссылка на аккаунт в инстаграме"
+            />
           </a>
         </li>
         <li class="header__socials-list-item">
           <a href="">
-            <img src="./images/facebook.svg" width="16" height="16" alt="" />
+            <img
+              class="socials-icon"
+              src="./images/facebook.svg"
+              width="16"
+              height="16"
+              alt="ссылка на аккаунт в фейсбуке"
+            />
           </a>
         </li>
       </ul>
     </header>
+
     <main>
       <section class="section who-i-am">
         <img
@@ -49,16 +80,23 @@
             <span class="who-i-am__profession">Фрилансер</span><br />
             Петр Федоров
           </h1>
-          <p class="ordinary-text who-i-am__ordinary-text">
+          <p class="who-i-am__ordinary-text">
             Разрабатываю сайты для малого и среднего бизнеса. У меня можно
             заказать дизайн и верстку небольшого сайта или интернет-магазина
           </p>
-          <button
-            class="free-consultation-button who-i-am__free-consultation-button">
+
+          <!-- кнопка перенаправляет юзера в конец страницы 
+         к форме для заполнения контактных данных-->
+
+          <a
+            class="free-consultation-button who-i-am__free-consultation-button"
+            href="#free-consultation-button"
+          >
             Бесплатная консультация
-          </button>
+          </a>
         </div>
       </section>
+
       <section class="section benefits">
         <h2 class="section__title">Со мной удобно работать</h2>
         <ul class="benefits__list">
@@ -106,6 +144,7 @@
           </li>
         </ul>
       </section>
+
       <section class="section portfolio">
         <h2 class="section__title">Выполненные проекты</h2>
         <ul class="portfolio__list">
@@ -129,47 +168,175 @@
           </li>
         </ul>
       </section>
+
       <section class="section gallery">
         <ul class="gallery__list">
           <li class="gallery__list-item">
             <img
               class="gallery__foto"
               src="./images/gallery1.jpg"
-              alt="красивая картинка с собакой"
-            />
+              alt="красивая картинка с собакой">
           </li>
           <li class="gallery__list-item">
             <img
               class="gallery__foto"
               src="./images/gallery2.jpg"
-              alt="красивая картинка"
-            />
+              alt="красивая картинка">
           </li>
           <li class="gallery__list-item">
             <img
               class="gallery__foto"
               src="./images/8e447467e0ee2f4efcdc1919187f8268.jpg"
-            />
+              alt="красивая картинка">
           </li>
           <li class="gallery__list-item">
-            <img class="gallery__foto" src="./images/gallery4.jpg" />
+            <img class="gallery__foto" src="./images/gallery4.jpg" alt="красивая
+            картинка">
+          </li>
+          <li class="gallery__list-item">
+            <img class="gallery__foto" src="./images/gallery5.jpg" alt="красивая
+            картинка">
+          </li>
+          <li class="gallery__list-item">
+            <img class="gallery__foto" src="./images/gallery6.jpg" alt="красивая
+            картинка">
+          </li>
+          <li class="gallery__list-item">
+            <img class="gallery__foto" src="./images/gallery7.jpg" alt="красивая
+            картинка">
+          </li>
+          <li class="gallery__list-item">
+            <img class="gallery__foto" src="./images/gallery8.jpg" alt="красивая
+            картинка">
+          </li>
+          <li class="gallery__list-item">
+            <img class="gallery__foto" src="./images/gallery9.jpg" alt="красивая
+            картинка">
+          </li>
+          <li class="gallery__list-item">
+            <img class="gallery__foto" src="./images/gallery10.jpg" alt="красивая
+            картинка">
+          </li>
+          <li class="gallery__list-item">
+            <img class="gallery__foto" src="./images/gallery11.png" alt="красивая
+            картинка">
+          </li>
+          <li class="gallery__list-item">
+            <img class="gallery__foto" src="./images/gallery12.jpg" alt="красивая
+            картинка">
           </li>
         </ul>
       </section>
     </main>
+
     <footer class="footer">
       <h2 class="section__title footer__title">Свяжитесь со мной</h2>
-      <form class="contacts-form">
-        <p class="contacts-form__pseudolabel">Можете просто оставить заявку, я позвоню вам сегодня</p>
+        <form class="contacts-form">
+        <p class="contacts-form__pseudolabel">
+          Можете просто оставить заявку, я позвоню вам сегодня
+        </p>
         <label for="name" class="visually-hidden">Введите ваше имя</label>
-        <input class="contacts-form__input contacts-form__input_type_name" type="text" name="name" required autocomplete placeholder="Ваше имя">
+        <input
+          id="name"
+          class="contacts-form__input contacts-form__input_type_name"
+          type="text"
+          name="name"
+          required
+          placeholder="Ваше имя"
+        />
         <label for="phone" class="visually-hidden">Введите ваш телефон</label>
-        <input class="contacts-form__input contacts-form__input_type_phone" type="tel" name="phone" required autocomplete placeholder="Ваш телефон">
-      
-      <button class="free-consultation-button who-i-am__free-consultation-button">
-            Бесплатная консультация
-          </button>
-        </form>
+        <input
+          id="phone"
+          class="contacts-form__input contacts-form__input_type_phone"
+          type="tel"
+          name="phone"
+          required
+          placeholder="Ваш телефон"
+        />
+        <button
+          class="free-consultation-button"
+          id="free-consultation-button"
+        >
+          Бесплатная консультация
+        </button>
+      </form>
+      <ul class="footer__contacts-list">
+        <li>
+          <h3 class="small-title">Телефон</h3>
+          <address>
+            <a class="footer__address-link" href="tel:+79991234567"
+              >+7 999 123 45 67</a
+            >
+          </address>
+        </li>
+        <li>
+          <h3 class="small-title">Почта</h3>
+          <address>
+            <a class="footer__address-link" href="mailto:ivanov@mail.ru"
+              >ivanov@mail.ru</a
+            >
+          </address>
+        </li>
+        <li>
+          <h3 class="small-title">Соцсети</h3>
+          <ul class="footer__address-link-list">
+            <li>
+              <address>
+                <a class="footer__address-link" href="">t.me&sol;ivanov</a>
+              </address>
+            </li>
+            <li>
+              <address>
+                <a class="footer__address-link" href="">vk.me&sol;ivanov</a>
+              </address>
+            </li>
+            <li>
+              <address>
+                <a class="footer__address-link" href="">fb.me&sol;ivanov</a>
+              </address>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="footer__socials-list">
+        <li class="footer__socials-list-item">
+          <a href="">
+            <img
+              class="socials-icon"
+              src="./images/github.png"
+              alt="ссылка на аккаунт на гитхабе"
+            />
+          </a>
+        </li>
+        <li class="footer__socials-list-item">
+          <a href="">
+            <img
+              class="socials-icon"
+              src="./images/twitter.svg"
+              alt="ссылка на аккаунт в твиттере"
+            />
+          </a>
+        </li>
+        <li class="footer__socials-list-item">
+          <a href="">
+            <img
+              class="socials-icon"
+              src="./images/instagram.svg"
+              alt="ссылка на аккаунт в инстаграме"
+            />
+          </a>
+        </li>
+        <li class="footer__socials-list-item">
+          <a href="">
+            <img
+              class="socials-icon"
+              src="./images/facebook.svg"
+              alt="ссылка на аккаунт в фейсбуке"
+            />
+          </a>
+        </li>
+      </ul>
+      <a class="privacy-policy-link" href="">Политика конфиденциальности</a>
     </footer>
   </body>
 </html>
